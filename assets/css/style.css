@@ -2,16 +2,24 @@ body {
     overflow: hidden;
     background-color: #C7F2BF;
 }
+.back {
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    padding: 3px;
+    float: left;
+}
 .welcome {
     margin-left: 30px;
     width: 400px;
     font-family: 'Lobster Two';
     font-size: 80px;
     color: rgba(0,0,0,.7);
-    transition: all .5s;
+    -webkit-transition: all .5s;
 }
 .welcome:hover {
-    transform: scale(1.1) translate(15px, 0px);
+    -webkit-transform: scale(1.1) -webkit-translate(15px, 0px);
 }
 .content.swe-box {
     margin-left: auto;
@@ -40,6 +48,7 @@ body {
     margin: 0 auto;
     height: 100px;
     background-color: #C7F2BF;
+
 }
 .content.link {
     display: inline-block;
@@ -53,6 +62,7 @@ body {
     color: white;
     background-color: green;
     border-radius: 5px;
+    padding-top: 5px;
 }
 .content.link a {
     position: absolute;
@@ -120,6 +130,11 @@ object {
     text-align: center;
 }
 
+.content h3 {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .content p {
     width: 500px;
     margin: 0 auto;
@@ -129,7 +144,7 @@ object {
 
 .big {
     position: relative;
-    transform: scale(1);
+    -webkit-transform: scale(1);
     margin-left: auto;
     margin-right: auto;
     width : 99vw;
@@ -149,25 +164,25 @@ object {
 
 }
 .small.zero:hover .petal-text {
-    transform : rotate(-37deg) scale(1.4);
+    -webkit-transform : rotate(-37deg) scale(1.4);
 }
 .small.one:hover .petal-text {
-    transform : rotate(35deg) scale(1.4);
+    -webkit-transform : rotate(35deg) scale(1.4);
 }
 .small.two:hover .petal-text {
-    transform : rotate(107deg) scale(1.4);
+    -webkit-transform : rotate(107deg) scale(1.4);
 }
 .small.three:hover .petal-text {
-    transform : rotate(179deg) scale(1.4);
+    -webkit-transform : rotate(179deg) scale(1.4);
 }
 .small.four:hover .petal-text {
-    transform : rotate(-109deg) scale(1.4);
+    -webkit-transform : rotate(-109deg) scale(1.4);
 }
 .small .petal-text {
     width: 126px;
     margin: 80px 0px;
     text-align: center;
-    transition: transform .5s;
+    -webkit-transition: -webkit-transform .5s;
 }
 #circle {
     border-radius: 50%;
@@ -178,10 +193,10 @@ object {
     display: block;
     top: calc(50% - 40px);
     left: calc(50% - 40px);
-    transition: transform 2s ease;
+    -webkit-transition: -webkit-transform 2s ease;
 }
 #circle:hover {
-    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
 }
 .petal {
    display: block;
@@ -191,40 +206,40 @@ object {
    font-family: 'Josefin Slab', serif;
    font-size: 20px;
    color: white;
-   transition: all 2s ease, transform .5s ease, width 2s, height 2s;
+   -webkit-transition: all 2s ease, -webkit-transform .5s ease, width 2s, height 2s;
 }
 .petal.small.zero {
-    transform : rotate(37deg) translate(-20px, -20px);
+    -webkit-transform : rotate(37deg) translate(-20px, -20px);
 }
 .petal.small.one {
-    transform : rotate(-35deg) translate(160px, 85px);
+    -webkit-transform : rotate(-35deg) translate(160px, 85px);
 }
 .petal.small.two {
-    transform : rotate(-107deg) translate(115px, 285px);
+    -webkit-transform : rotate(-107deg) translate(115px, 285px);
 }
 .petal.small.three {
-    transform : rotate(-179deg) translate(-90px, 310px);
+    -webkit-transform : rotate(-179deg) translate(-90px, 310px);
 }
 .petal.small.four {
-    transform : rotate(-251deg) translate(-160px, 110px);
+    -webkit-transform : rotate(-251deg) translate(-160px, 110px);
 }
 .petal.small:hover {
     background-color: rgb(255, 163, 71);
     cursor: pointer;
 }
 .petal.small.zero:hover {
-    transform: rotate(37deg) translate(-20px, -20px) scale(1.5);
+    -webkit-transform: rotate(37deg) translate(-20px, -20px) scale(1.5);
 }
 
 .petal.small.one:hover {
-    transform : rotate(-35deg) translate(160px, 85px) scale(1.5);
+    -webkit-transform : rotate(-35deg) translate(160px, 85px) scale(1.5);
 }
 .petal.small.two:hover {
-    transform : rotate(-107deg) translate(115px, 275px) scale(1.5);
+    -webkit-transform : rotate(-107deg) translate(115px, 275px) scale(1.5);
 }
 .petal.small.three:hover {
-    transform : rotate(-179deg) translate(-90px, 300px) scale(1.5);
+    -webkit-transform : rotate(-179deg) translate(-90px, 300px) scale(1.5);
 }
 .petal.small.four:hover {
-    transform : rotate(-251deg) translate(-160px, 110px) scale(1.5);
+    -webkit-transform : rotate(-251deg) translate(-160px, 110px) scale(1.5);
 }
